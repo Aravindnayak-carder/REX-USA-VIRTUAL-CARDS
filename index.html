@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REX USA | Virtual Cards</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0715;color:#fff;font-family:Arial,sans-serif}
+header{padding:18px;display:flex;justify-content:space-between;background:#10091c;border-bottom:1px solid #49305f}
+.logo{font-weight:bold;font-size:21px}
+.logo span{color:#bd49ff}
+nav a{color:white;text-decoration:none;margin-left:12px}
+.hero{text-align:center;padding:65px 20px;background:radial-gradient(ellipse at top,#542078,#0b0715 75%)}
+.hero small{color:#d28aff;letter-spacing:3px}
+h1{font-size:clamp(34px,8vw,56px);margin:24px 0}
+p{line-height:1.7;color:#c5bbd0}
+.btn{display:inline-block;background:#a82cff;color:white;border:0;border-radius:10px;padding:14px 22px;font-weight:bold;text-decoration:none;cursor:pointer}
+main{max-width:950px;margin:auto;padding:25px 18px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:linear-gradient(145deg,#29143e,#151020);border:1px solid #7136a1;border-radius:18px;padding:22px}
+.chip{height:32px;width:44px;background:#f3cc44;border-radius:7px;margin:24px 0}
+.price{font-size:22px;color:#d38aff;font-weight:bold}
+.card .btn{width:100%;margin-top:10px}
+.notice{border:1px solid #544166;border-radius:12px;padding:16px}
+footer{text-align:center;padding:25px;border-top:1px solid #49305f;color:#bcb0c9}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">REX <span>USA</span></div>
+  <nav><a href="#market">Market</a><a href="#about">About</a></nav>
+</header>
+
+<section class="hero">
+  <small>VIRTUAL CARD MARKETPLACE</small>
+  <h1>Virtual Cards.<br><span style="color:#bd49ff">Simplified.</span></h1>
+  <p>Explore products, transparent pricing and clear terms.</p>
+  <a class="btn" href="#market">Explore Marketplace →</a>
+</section>
+
+<main id="market">
+  <h2>Marketplace</h2>
+  <p>Demo listings — live inventory and checkout are not connected.</p>
+  <div class="products">
+    <article class="card">
+      <div>DEMO PRODUCT 01</div>
+      <div class="chip"></div>
+      <h3>Virtual Card Basic</h3>
+      <p>Product details and eligibility information.</p>
+      <div class="price">Price: TBD</div>
+      <button class="btn" onclick="details()">View Details</button>
+    </article>
+    <article class="card">
+      <div>DEMO PRODUCT 02</div>
+      <div class="chip"></div>
+      <h3>Virtual Card Plus</h3>
+      <p>Supported regions, fees and product terms.</p>
+      <div class="price">Price: TBD</div>
+      <button class="btn" onclick="details()">View Details</button>
+    </article>
+  </div>
+</main>
+
+<main id="about">
+  <h2>About REX USA</h2>
+  <div class="notice">
+    <p>Contact information, refund policy and verified product details will appear here.</p>
+  </div>
+</main>
+
+<footer>© 2026 REX USA | Terms | Privacy | Contact</footer>
+
+<script>
+function details(){
+  alert("Demo website: live products and checkout are not available yet.");
+}
+</script>
+</body>
+</html>
